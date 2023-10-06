@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="fecha"></div>
+            <div class="header">
+                <h2>Hola, ¿Qué haremos hoy?</h2>
+            </div>
+            <div class="agregar-tarea">
+                <input type="text" id="input" placeholder="Agrega una tarea...">
+                <i id="boton-enter" class="bi bi-plus-circle-fill"></i>
+            </div>
+        </header>
+        <div class="seccion-tarea">
+            <h3>Estas son tus tareas pendientes...</h3>
+            <ul id="lista">
+                <!-- <li id="elemento">
+                    <i class="bi bi-circle"></i>
+                    <p class="text">Go get milk</p>
+                    <i class="bi bi-trash"></i>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
