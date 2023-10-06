@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+  --container-height: 600px;
+  --contaier-width: 400px;
+  --header-height: 150px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', monospace;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, orange, rgb(1, 85, 116));
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  width: var(--contaier-width);
+  height: var(--container-height);
+  border: 1px solid grey;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: var(--header-height);
+  background-image: url('./img/fondo-abstracto.avif');
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbfbfb;
+  font-size: 16px;
+}
+
+#fecha {
+  color: white;
+  padding: 5px 0 5px 5px;
+  font-size: small;
+}
+
+.agregar-tarea {
+  width: 100%;
+  height: 50px;
+  padding: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.agregar-tarea input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  border-right: 0px;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 0.1);
+  outline: transparent;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.agregar-tarea input::placeholder {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.agregar-tarea i {
+  width: 60px;
+  height: 40px;
+  font-size: 30px;
+  padding: 3px;
+  background-color: transparent;
+  color: rgb(255, 242, 0);
+  border: none;
+  border-left: 0px;
+  cursor: pointer;
+}
+
+.agregar-tarea i:hover {
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  cursor: pointer;
+  color: rgb(0, 222, 148);
+}
+
+/* Seccion tareas */
+.seccion-tarea h3 {
+  color: rgb(108, 108, 108);
+  margin: 10px;
+  font-size: 15px;
+}
+
+.seccion-tarea li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgb(1, 85, 116), rgb(4, 92, 95));
+  ;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  margin: 5px;
+}
+
+.seccion-tarea i {
+  font-size: 25px;
+}
+
+.seccion-tarea>ul p {
+  font-size: 1.1rem;
+}
+
+.seccion-tarea i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: orange;
+}
+
+/* #lista {
+  height: calc(var(--container-height) - var(--header-height));
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid rgb(219, 219, 219);
+  overflow: scroll;
+  border-radius: 0 0 5px 5px;
+}
+
+#lista .elemento {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: 5px;
+}
+#lista .todo:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#todos-list .todo * {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+#todos-list .todo i {
+  font-size: 0.9rem;
+}
+#todos-list .todo p {
+  flex: 1;
+  word-break: break-all;
+}
+.checked {
+  text-decoration: line-through;
+  color: grey;
+}
+#todos-list .todo .bi-pencil-square {
+  color: rgb(31, 177, 48);
+}
+#todos-list .todo .bi-trash {
+  color: rgb(236, 82, 82);
+  margin: 0;
+}
+
+.notification {
+  position: absolute;
+
+  width: calc(3 * var(--contaier-width) / 4);
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0.9;
+
+  border-radius: 8px;
+  background-color: rgb(233, 81, 81);
+  top: 10px;
+  right: calc(-3 * var(--contaier-width) / 4);
+
+  color: #fff;
+
+  transition: 300ms right ease-in-out;
+}
+
+.notif-enter {
+  right: 10px;
+} */
